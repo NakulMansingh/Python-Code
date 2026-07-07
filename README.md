@@ -1,2 +1,2 @@
 # Python-Code
-Problem &amp; Solutions for Python
+Problems &amp; Solutions for Python
