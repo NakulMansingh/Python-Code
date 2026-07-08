@@ -1,4 +1,4 @@
-#Problem 1 — if/elif/else: particle classifier
+#Problem 7 — if/elif/else: particle classifier
 #Given a particle's charge q (in units of elementary charge) and mass m (in MeV/c²), classify it:
 #q = +1, m = 938.3 → proton
 #q = -1, m = 0.511 → electron
