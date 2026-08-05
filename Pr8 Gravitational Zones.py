@@ -1,4 +1,4 @@
-#Problem 2 — if/elif/else: gravitational zones
+#Problem 8 — if/elif/else: gravitational zones
 #Given a distance r from Earth's centre (in km), classify the region and print the approximate gravitational acceleration:
 #Region, r (km), g (m/s²)
 #Inner core, r < 1220, 4.4
