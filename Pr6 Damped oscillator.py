@@ -7,24 +7,22 @@
 
 import math, cmath
 
-w0 = 10     # natural frequency rad/s
-y = 3       # damping rate rad/s
+w0 = 10 #rad/s
+y = 3 #rad/s
 
 im_part = -y*1j/2
 re_part = cmath.sqrt(w0**2 - (y**2)/4)
 
-pos_root = re_part + im_part
-neg_root = - re_part + im_part
+p_root = im_part + re_part
+n_root = im_part - re_part
 
-print(f"positive root = {pos_root:.2f}")
-print(f"negative root = {neg_root:.2f}")
-print(f"oscillation frequency = {re_part:.2f}")
-print(f"decay rate = {im_part:.2f}")
-
-if y < 2*w0:
-    regime = "oscillator underdamped"
-elif y == 2*w0:
-    regime = "oscillator critially damped"
+if y < 2*w0 :
+    regime = "underdamped oscillator"
+elif y == 2*w0 :
+    regime = "critically damped oscillator"
 else:
-    regime = "oscillator overdamped"
-print(f"regime ={regime} because y = {y}, 2w0= {2*w0}")
+    regime = "overdamped oscillator"
+
+print(f"positive root = {p_root:.2f}, negative root = {n_root:.2f}")
+print(f"oscillation frequency = {re_part.real:.2f}, decay rate = {im_part.imag:.2f}")
+print(f"regime = {regime} because y = {y}, 2w0 = {2*w0}")
