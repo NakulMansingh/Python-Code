@@ -10,7 +10,7 @@ Planets = [
     ("Mars",     6.390e23, 3.389e6),
     ("Jupiter",  1.898e27, 6.991e7)
 ]
-#Rocket escape velocity is 10 km/s.
+#Rocket's velocity is 10 km/s.
 G = 6.674e-11
 
 for p, M, R in Planets:
