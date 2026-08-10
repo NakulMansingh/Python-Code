@@ -18,7 +18,7 @@ def emission_wavelength(n1,n2):
     E1 = bohr_energy(n1)
     E2 = bohr_energy(n2)
     dE = E2 - E1
-    h = 4.136e-15 #ev.s
+    h = 4.136e-15 #eV.s
     c = 3e8 #m/s
     lam = h*c/abs(dE)
     lam_nm = lam * 1e9 #nm
